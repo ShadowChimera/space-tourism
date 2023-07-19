@@ -33,3 +33,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# other
+.history
+
+# sketch and figma design files
+*.sketch
+*.fig
+*.xd
