@@ -31,7 +31,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={barlow.className}>{children}</body>
+      <body
+        className={classNames(
+          barlow.variable,
+          barlowCondensed.variable,
+          bellefair.variable
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
