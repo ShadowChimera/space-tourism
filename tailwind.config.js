@@ -36,6 +36,9 @@ module.exports = {
         xs: '330px',
         'md-h': { raw: '(min-height: 736px)' },
       },
+      spacing: {
+        2.5: '0.375rem',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
