@@ -63,11 +63,10 @@ const Background = () => {
   return (
     <div className={classNames('contents')}>
       <Image
-        className={classNames('z-[-1]')}
+        className={classNames('z-[-1] object-cover')}
         src={bestSrc?.src ?? background.src}
         alt=""
         fill
-        objectFit="cover"
       />
     </div>
   );
