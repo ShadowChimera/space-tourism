@@ -42,7 +42,7 @@ export default function RootLayout({
         )}
       >
         <Header />
-        {children}
+        <div className={classNames('p-6')}>{children}</div>
       </body>
     </html>
   );

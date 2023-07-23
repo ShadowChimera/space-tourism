@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main
       className={classNames(
-        'mx-auto mt-6 flex flex-col items-center gap-20 p-6',
+        'mx-auto mt-6 flex flex-col items-center gap-20',
         'md:mt-20 md:gap-40',
         '2xl:mt-60 2xl:flex-row 2xl:justify-around',
         '2xl:max-w-[1440px]'
