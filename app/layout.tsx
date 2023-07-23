@@ -37,7 +37,8 @@ export default function RootLayout({
         className={classNames(
           barlow.variable,
           barlowCondensed.variable,
-          bellefair.variable
+          bellefair.variable,
+          'relative'
         )}
       >
         <Header />

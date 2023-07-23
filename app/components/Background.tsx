@@ -61,7 +61,7 @@ const Background = () => {
         );
 
   return (
-    <div className={classNames('contents')}>
+    <div className={classNames('absolute inset-0 min-h-screen')}>
       <Image
         className={classNames('z-[-1] object-cover')}
         src={bestSrc?.src ?? background.src}
