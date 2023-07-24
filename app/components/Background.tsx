@@ -1,6 +1,6 @@
 'use client';
 import classNames from 'classnames';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { usePathname } from 'next/navigation';
 import { backgrounds, mainNav } from '../constants';
 import { useEffect, useState } from 'react';
@@ -38,7 +38,10 @@ const Background = () => {
     bgWidth === null
       ? null
       : background.srcset?.reduce(
-          (best: { src: null | string; width: number }, cur) => {
+          (
+            best: { src: null | string | StaticImageData; width: number },
+            cur
+          ) => {
             if (!best.src) {
               return { ...cur };
             }
