@@ -31,7 +31,7 @@ const Navigation = () => {
         variants={animationVariants}
         className={classNames(
           'fixed inset-y-0 right-0 z-50 w-64 bg-light bg-opacity-[0.04] font-sans-condensed text-sm backdrop-blur-2xl',
-          'md:text-2xs md:!visible md:static md:!z-auto md:w-fit md:!translate-x-0 md:px-12',
+          'md:!visible md:static md:!z-auto md:w-fit md:!translate-x-0 md:px-12 md:text-2xs',
           '2xl:pl-32 2xl:pr-44 2xl:text-sm'
         )}
       >
@@ -61,7 +61,12 @@ const Navigation = () => {
 
                   'focus-within:after:bg-opacity-50 hover:after:bg-opacity-50',
                   'active:after:bg-opacity-100',
-                  { 'after:!bg-opacity-100': pathname.startsWith(nav.href) },
+                  {
+                    'after:!bg-opacity-100':
+                      pathname === nav.href ||
+                      (!nav.href.endsWith('/') &&
+                        pathname.startsWith(nav.href)),
+                  },
 
                   'md:px-0 md:py-10',
                   'md:after:inset-x-0 md:after:bottom-0 md:after:top-auto md:after:h-1 md:after:w-full'
