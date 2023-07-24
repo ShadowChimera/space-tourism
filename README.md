@@ -1,3 +1,11 @@
+# Space Tourism Website
+
+This is a small training project on Next.js (work currently in progress)
+
+<br/><br/>
+
+# Next.js initial readme
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
