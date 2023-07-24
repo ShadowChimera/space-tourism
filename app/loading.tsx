@@ -5,10 +5,10 @@ const Loading = () => {
   return (
     <div
       className={classNames(
-        'absolute inset-0 flex items-center justify-center'
+        'absolute inset-0 flex min-h-screen items-center justify-center'
       )}
     >
-      <LoadingIcon />
+      <LoadingIcon size={64} strokeWidth={6} />
     </div>
   );
 };
