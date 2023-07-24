@@ -1,13 +1,38 @@
 import classNames from 'classnames';
 
-export const LoadingIcon = () => {
+export interface LoadingIconProps {
+  size?: number;
+  strokeWidth?: number;
+  className?: string;
+}
+
+export const LoadingIcon = ({
+  size = 32,
+  strokeWidth = 4,
+  className: customClassName,
+}: LoadingIconProps) => {
   return (
     <div
+      style={{
+        width: size,
+        height: size,
+        borderWidth: strokeWidth,
+      }}
       className={classNames(
-        'relative h-8 w-8 animate-spin rounded-full border-4 border-light border-opacity-10',
-        'after:absolute after:inset-[-2px] after:rounded-full after:border-0 after:border-r-2 after:border-[transparent] after:border-r-light'
+        customClassName,
+        'relative h-8 w-8 animate-spin rounded-full border-4 border-light border-opacity-10'
       )}
-    ></div>
+    >
+      <span
+        style={{
+          inset: -(strokeWidth / 2),
+          borderRightWidth: strokeWidth / 2,
+        }}
+        className={classNames(
+          'absolute inset-[-2px] rounded-full border-0 border-r-2 border-[transparent] border-r-light'
+        )}
+      ></span>
+    </div>
   );
 };
 
