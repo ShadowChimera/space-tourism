@@ -47,7 +47,7 @@ const Slider = () => {
   );
 
   return (
-    <div className={classNames('relative')}>
+    <div className={classNames('relative mx-auto', '2xl:max-w-[1440px]')}>
       <div
         className={classNames(
           'absolute inset-0 flex items-start justify-center',
