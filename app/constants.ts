@@ -34,7 +34,7 @@ export const backgrounds = {
     srcset: [
       { src: '/static/home/background-home-mobile.jpg', width: 375 },
       { src: '/static/home/background-home-tablet.jpg', width: 768 },
-      { src: '/static/home/background-home-desktop.jpg ', width: 1440 },
+      { src: '/static/home/background-home-desktop.jpg', width: 1440 },
     ],
   },
   [Pages.destination]: {
@@ -49,7 +49,7 @@ export const backgrounds = {
         width: 768,
       },
       {
-        src: '/static/destination/background-destination-desktop.jpg ',
+        src: '/static/destination/background-destination-desktop.jpg',
         width: 1440,
       },
     ],
@@ -59,7 +59,7 @@ export const backgrounds = {
     srcset: [
       { src: '/static/crew/background-crew-mobile.jpg', width: 375 },
       { src: '/static/crew/background-crew-tablet.jpg', width: 768 },
-      { src: '/static/crew/background-crew-desktop.jpg ', width: 1440 },
+      { src: '/static/crew/background-crew-desktop.jpg', width: 1440 },
     ],
   },
   [Pages.technology]: {
