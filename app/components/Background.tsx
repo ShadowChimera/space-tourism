@@ -9,8 +9,11 @@ const Background = () => {
   const pathname = usePathname();
   const [bgWidth, setBgWidth] = useState<number | null>(null);
 
-  const currentPage = mainNav.find((nav) => pathname.startsWith(nav.href))
-    ?.name as keyof typeof backgrounds;
+  const currentPage = mainNav.find(
+    (nav) =>
+      pathname === nav.href ||
+      (!nav.href.endsWith('/') && pathname.startsWith(nav.href))
+  )?.name as keyof typeof backgrounds;
 
   const handleScreenResize = () => {
     setBgWidth(window.screen.width);
