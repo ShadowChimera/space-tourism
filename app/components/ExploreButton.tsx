@@ -1,14 +1,23 @@
 'use client';
 import classNames from 'classnames';
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import usePulseAnimation from '@/hooks/usePulseAnimation';
+import { mainNav, Pages } from '../constants';
 
 const ExploreButton = () => {
   const [buttonScope, backgroundScope, animationController] =
     usePulseAnimation();
 
+  const router = useRouter();
+
   return (
     <motion.button
+      onClick={() => {
+        router.push(
+          mainNav.find((nav) => nav.name === Pages.destination)!.href
+        );
+      }}
       ref={buttonScope}
       onMouseEnter={() => {
         animationController?.stop();
