@@ -2,6 +2,18 @@
 
 This is a small training project on Next.js (work currently in progress)
 
+Deployment: https://space-tourism-tawny-theta.vercel.app/
+
+This project uses next technologies:
+
+- Next.js (React, TypeScript)
+- TailwindCSS
+
+... and modules:
+
+- Framer Motion - for animations
+- Swiper - for support of tab switching with swipes
+
 <br/><br/>
 
 # Next.js initial readme
